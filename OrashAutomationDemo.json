@@ -12,6 +12,7 @@
           "AccDoc"
         ],
         "summary": "dasdasdasdasdasd",
+        "description": "Sample request:\r\n            \r\n    POST /Todo\r\n    {\r\n       \"id\": 1,\r\n       \"name\": \"Item #1\",\r\n       \"isComplete\": true\r\n    }\r\nSample response:\r\n            \r\n    POST /Todo\r\n    {\r\n       \"id\": 1,\r\n       \"name\": \"Item #1\",\r\n       \"isComplete\": true\r\n    }",
         "consumes": [
           "application/json",
           "text/json",
