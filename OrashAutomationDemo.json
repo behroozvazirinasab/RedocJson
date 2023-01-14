@@ -1,0 +1,1358 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "OrashMIS Automation API Demo",
+    "description": " وب سرویس در این صفحه جهت نمایش و دمو می باشد",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/v{version}/AccDoc": {
+      "post": {
+        "tags": [
+          "AccDoc"
+        ],
+        "summary": "dasdasdasdasdasd",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/AccDocViewModelOrashWebServiceModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Auth/Create": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AuthModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Auth": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AuthModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Auth/RefreshToken": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AuthenticatedViewModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Customer": {
+      "post": {
+        "tags": [
+          "Customer"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CustomerViewModelOrashWebServiceModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Good": {
+      "post": {
+        "tags": [
+          "Good"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/GoodsViewModelOrashWebServiceModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Good"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Good"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/GoodsRateViewModelOrashWebServiceModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Install": {
+      "post": {
+        "tags": [
+          "Install"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Install/Renew": {
+      "get": {
+        "tags": [
+          "Install"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Invoice": {
+      "post": {
+        "tags": [
+          "Invoice"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/InvoiceViewModelOrashWebServiceModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/RecPay": {
+      "post": {
+        "tags": [
+          "RecPay"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ReceivePaymentViewModelOrashWebServiceModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Storage": {
+      "post": {
+        "tags": [
+          "Storage"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/StorageViewModelOrashWebServiceModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AccDocDetailsViewModel": {
+      "type": "object",
+      "properties": {
+        "hid": {
+          "type": "string"
+        },
+        "iid": {
+          "type": "string"
+        },
+        "row": {
+          "type": "string"
+        },
+        "kl": {
+          "type": "string"
+        },
+        "mn": {
+          "type": "string"
+        },
+        "tc": {
+          "type": "string"
+        },
+        "ide": {
+          "type": "string"
+        },
+        "d": {
+          "type": "string"
+        },
+        "c": {
+          "type": "string"
+        },
+        "t2": {
+          "type": "string"
+        }
+      }
+    },
+    "AccDocMasterViewModel": {
+      "type": "object",
+      "properties": {
+        "hid": {
+          "type": "string"
+        },
+        "ano": {
+          "type": "string"
+        },
+        "hdec": {
+          "type": "string"
+        },
+        "ad": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AccDocDetailsViewModel"
+          }
+        }
+      }
+    },
+    "AccDocViewModel": {
+      "type": "object",
+      "properties": {
+        "createuser": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "createdate": {
+          "type": "string"
+        },
+        "createtime": {
+          "type": "string"
+        },
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AccDocMasterViewModel"
+          }
+        }
+      }
+    },
+    "AccDocViewModelOrashWebServiceModel": {
+      "type": "object",
+      "properties": {
+        "uniqueID": {
+          "type": "string"
+        },
+        "model": {
+          "$ref": "#/definitions/AccDocViewModel"
+        }
+      }
+    },
+    "AuthModel": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "uniqueID": {
+          "type": "string"
+        }
+      }
+    },
+    "AuthenticatedViewModel": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string"
+        },
+        "refreshToken": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    },
+    "CustomerViewModel": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "tel": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "persons": {
+          "type": "boolean"
+        },
+        "expence": {
+          "type": "boolean"
+        },
+        "bank": {
+          "type": "boolean"
+        },
+        "cash": {
+          "type": "boolean"
+        },
+        "tuner": {
+          "type": "boolean"
+        },
+        "perType": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "mobile": {
+          "type": "string"
+        },
+        "fax": {
+          "type": "string"
+        },
+        "economicCode": {
+          "type": "string"
+        },
+        "nationalCode": {
+          "type": "string"
+        },
+        "registerNo": {
+          "type": "string"
+        },
+        "postCode": {
+          "type": "string"
+        },
+        "nationalNo": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "fName": {
+          "type": "string"
+        },
+        "lName": {
+          "type": "string"
+        },
+        "klCodeRef": {
+          "type": "string"
+        },
+        "mnCodeRef": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "goodRequest": {
+          "type": "string"
+        },
+        "address2": {
+          "type": "string"
+        },
+        "tel2": {
+          "type": "string"
+        },
+        "mobile2": {
+          "type": "string"
+        },
+        "email2": {
+          "type": "string"
+        },
+        "klCashCodeRef": {
+          "type": "string"
+        },
+        "mnCashCodeRef": {
+          "type": "string"
+        },
+        "klBankCodeRef": {
+          "type": "string"
+        },
+        "mnBankCodeRef": {
+          "type": "string"
+        },
+        "klPayCodeRef": {
+          "type": "string"
+        },
+        "mnPayCodeRef": {
+          "type": "string"
+        },
+        "craft": {
+          "type": "string"
+        },
+        "stateIdRef": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "cityIdRef": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "visitorCodeRef": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "actualType": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "transactionTaxType": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "rateDefualt": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "branchName": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string"
+        },
+        "accountOwner": {
+          "type": "string"
+        },
+        "shebaNo": {
+          "type": "string"
+        },
+        "cardNo": {
+          "type": "string"
+        },
+        "branchTel": {
+          "type": "string"
+        },
+        "branchFax": {
+          "type": "string"
+        },
+        "accountNo": {
+          "type": "string"
+        },
+        "calcTax": {
+          "type": "boolean"
+        }
+      }
+    },
+    "CustomerViewModelOrashWebServiceModel": {
+      "type": "object",
+      "properties": {
+        "uniqueID": {
+          "type": "string"
+        },
+        "model": {
+          "$ref": "#/definitions/CustomerViewModel"
+        }
+      }
+    },
+    "GoodsRateViewModel": {
+      "type": "object",
+      "properties": {
+        "goodCode": {
+          "type": "string"
+        },
+        "storageCode": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "fiPrice1": {
+          "format": "double",
+          "type": "number"
+        },
+        "offPercent1": {
+          "format": "double",
+          "type": "number"
+        },
+        "fiPrice2": {
+          "format": "double",
+          "type": "number"
+        },
+        "offPercent2": {
+          "format": "double",
+          "type": "number"
+        },
+        "fiPrice3": {
+          "format": "double",
+          "type": "number"
+        },
+        "offPercent3": {
+          "format": "double",
+          "type": "number"
+        },
+        "userIdRef": {
+          "format": "int64",
+          "type": "integer"
+        }
+      }
+    },
+    "GoodsRateViewModelOrashWebServiceModel": {
+      "type": "object",
+      "properties": {
+        "uniqueID": {
+          "type": "string"
+        },
+        "model": {
+          "$ref": "#/definitions/GoodsRateViewModel"
+        }
+      }
+    },
+    "GoodsViewModel": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "serial": {
+          "type": "string"
+        },
+        "fiPrice1": {
+          "format": "double",
+          "type": "number"
+        },
+        "offPercent1": {
+          "format": "double",
+          "type": "number"
+        },
+        "fiPrice2": {
+          "format": "double",
+          "type": "number"
+        },
+        "offPercent2": {
+          "format": "double",
+          "type": "number"
+        },
+        "fiPrice3": {
+          "format": "double",
+          "type": "number"
+        },
+        "offPercent3": {
+          "format": "double",
+          "type": "number"
+        },
+        "saleName": {
+          "type": "string"
+        },
+        "taxPercent": {
+          "format": "double",
+          "type": "number"
+        },
+        "lengthValue": {
+          "format": "double",
+          "type": "number"
+        },
+        "widthValue": {
+          "format": "double",
+          "type": "number"
+        },
+        "heightValue": {
+          "format": "double",
+          "type": "number"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "diameterValue": {
+          "format": "double",
+          "type": "number"
+        },
+        "nationalCode": {
+          "type": "string"
+        },
+        "weightPack": {
+          "format": "double",
+          "type": "number"
+        },
+        "weightGoods": {
+          "format": "double",
+          "type": "number"
+        },
+        "criterionWeight": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "unitIdRef": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "mainGroupCodeRef": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "secondGroupCodeRef": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "isAdded": {
+          "type": "boolean"
+        },
+        "isBuyAdded": {
+          "type": "boolean"
+        },
+        "unitPackingCodeRef": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "goodCategoryIdRef": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "serialsControl": {
+          "type": "boolean"
+        },
+        "patternIdRef": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "dimensionsLengthPack": {
+          "format": "double",
+          "type": "number"
+        },
+        "dimensionsWidthPack": {
+          "format": "double",
+          "type": "number"
+        },
+        "dimensionsHeightPack": {
+          "format": "double",
+          "type": "number"
+        },
+        "dimensionsLengthGoods": {
+          "format": "double",
+          "type": "number"
+        },
+        "dimensionsWidthGoods": {
+          "format": "double",
+          "type": "number"
+        },
+        "dimensionsHeightGoods": {
+          "format": "double",
+          "type": "number"
+        },
+        "criterionDimensions": {
+          "format": "int64",
+          "type": "integer"
+        }
+      }
+    },
+    "GoodsViewModelOrashWebServiceModel": {
+      "type": "object",
+      "properties": {
+        "uniqueID": {
+          "type": "string"
+        },
+        "model": {
+          "$ref": "#/definitions/GoodsViewModel"
+        }
+      }
+    },
+    "InvoiceDetailsViewModel": {
+      "type": "object",
+      "properties": {
+        "hid": {
+          "type": "string"
+        },
+        "iid": {
+          "type": "string"
+        },
+        "gs": {
+          "type": "string"
+        },
+        "gc": {
+          "type": "string"
+        },
+        "fp": {
+          "type": "string"
+        },
+        "ide": {
+          "type": "string"
+        },
+        "upcr": {
+          "type": "string"
+        },
+        "upc": {
+          "type": "string"
+        },
+        "ofr": {
+          "type": "string"
+        },
+        "op": {
+          "type": "string"
+        },
+        "tax": {
+          "type": "string"
+        },
+        "pc": {
+          "type": "string"
+        },
+        "tas": {
+          "type": "string"
+        },
+        "per": {
+          "type": "string"
+        },
+        "upC1": {
+          "type": "string"
+        },
+        "upC2": {
+          "type": "string"
+        },
+        "lv": {
+          "type": "string"
+        },
+        "wv": {
+          "type": "string"
+        },
+        "hv": {
+          "type": "string"
+        },
+        "cv": {
+          "type": "string"
+        },
+        "dv": {
+          "type": "string"
+        },
+        "cfp": {
+          "type": "string"
+        },
+        "ctp": {
+          "type": "string"
+        },
+        "cro": {
+          "type": "string"
+        },
+        "crt": {
+          "type": "string"
+        },
+        "itms": {
+          "type": "string"
+        }
+      }
+    },
+    "InvoiceMasterViewModel": {
+      "type": "object",
+      "properties": {
+        "hid": {
+          "type": "string"
+        },
+        "pc": {
+          "type": "string"
+        },
+        "hde": {
+          "type": "string"
+        },
+        "ft": {
+          "type": "string"
+        },
+        "mbl": {
+          "type": "string"
+        },
+        "cn": {
+          "type": "string"
+        },
+        "sf": {
+          "type": "string"
+        },
+        "t2": {
+          "type": "string"
+        },
+        "sp": {
+          "type": "string"
+        },
+        "dsc": {
+          "type": "string"
+        },
+        "stp": {
+          "type": "string"
+        },
+        "cc": {
+          "type": "string"
+        },
+        "boc": {
+          "type": "string"
+        },
+        "cr": {
+          "type": "string"
+        },
+        "ua": {
+          "type": "string"
+        },
+        "hsc": {
+          "type": "string"
+        },
+        "fd": {
+          "description": "جزئیات فاکتور",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/InvoiceDetailsViewModel"
+          }
+        },
+        "fb": {
+          "description": "بارنامه",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/InvoiceWayBillViewModel"
+          }
+        },
+        "fp": {
+          "description": "پرداخت (واریزی)",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/InvoicePaymentViewModel"
+          }
+        }
+      }
+    },
+    "InvoicePaymentViewModel": {
+      "type": "object",
+      "properties": {
+        "hid": {
+          "type": "string"
+        },
+        "paid": {
+          "type": "string"
+        },
+        "pid": {
+          "type": "string"
+        },
+        "pno": {
+          "type": "string"
+        },
+        "pr": {
+          "type": "string"
+        },
+        "sn": {
+          "type": "string"
+        },
+        "typ": {
+          "type": "string"
+        },
+        "td": {
+          "type": "string"
+        },
+        "ic": {
+          "type": "string"
+        },
+        "tF2C": {
+          "type": "string"
+        },
+        "tF2L": {
+          "type": "string"
+        },
+        "ciD1": {
+          "type": "string"
+        },
+        "ciD2": {
+          "type": "string"
+        },
+        "cR1": {
+          "type": "string"
+        },
+        "cR2": {
+          "type": "string"
+        },
+        "cV1": {
+          "type": "string"
+        },
+        "cV2": {
+          "type": "string"
+        },
+        "cst": {
+          "type": "string"
+        }
+      }
+    },
+    "InvoiceViewModel": {
+      "type": "object",
+      "properties": {
+        "createuser": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "createdate": {
+          "type": "string"
+        },
+        "createtime": {
+          "type": "string"
+        },
+        "visitorId": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "visitorPrice": {
+          "format": "double",
+          "type": "number"
+        },
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/InvoiceMasterViewModel"
+          }
+        }
+      }
+    },
+    "InvoiceViewModelOrashWebServiceModel": {
+      "type": "object",
+      "properties": {
+        "uniqueID": {
+          "type": "string"
+        },
+        "model": {
+          "$ref": "#/definitions/InvoiceViewModel"
+        }
+      }
+    },
+    "InvoiceWayBillViewModel": {
+      "type": "object",
+      "properties": {
+        "hid": {
+          "type": "string"
+        },
+        "bid": {
+          "type": "string"
+        },
+        "dc": {
+          "type": "string"
+        },
+        "wfec": {
+          "type": "string"
+        },
+        "wflc": {
+          "type": "string"
+        },
+        "fn": {
+          "type": "string"
+        },
+        "wbb": {
+          "type": "string"
+        },
+        "dg": {
+          "type": "string"
+        },
+        "tfg": {
+          "type": "string"
+        },
+        "pos": {
+          "type": "string"
+        },
+        "pod": {
+          "type": "string"
+        },
+        "dbl": {
+          "type": "string"
+        },
+        "dp": {
+          "type": "string"
+        }
+      }
+    },
+    "ReceivePaymentDetailsViewModel": {
+      "type": "object",
+      "properties": {
+        "hid": {
+          "type": "string"
+        },
+        "iid": {
+          "type": "string"
+        },
+        "prc": {
+          "type": "string"
+        },
+        "idisc": {
+          "type": "string"
+        },
+        "p": {
+          "type": "string"
+        },
+        "tax": {
+          "type": "string"
+        },
+        "t2": {
+          "type": "string"
+        },
+        "prC1": {
+          "type": "string"
+        },
+        "t21": {
+          "type": "string"
+        }
+      }
+    },
+    "ReceivePaymentMasterViewModel": {
+      "type": "object",
+      "properties": {
+        "hid": {
+          "type": "string"
+        },
+        "pc": {
+          "type": "string"
+        },
+        "rpt": {
+          "type": "string"
+        },
+        "rpc": {
+          "type": "string"
+        },
+        "t2": {
+          "type": "string"
+        },
+        "et": {
+          "type": "string"
+        },
+        "rd": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ReceivePaymentDetailsViewModel"
+          }
+        }
+      }
+    },
+    "ReceivePaymentViewModel": {
+      "type": "object",
+      "properties": {
+        "createuser": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "createdate": {
+          "type": "string"
+        },
+        "createtime": {
+          "type": "string"
+        },
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ReceivePaymentMasterViewModel"
+          }
+        }
+      }
+    },
+    "ReceivePaymentViewModelOrashWebServiceModel": {
+      "type": "object",
+      "properties": {
+        "uniqueID": {
+          "type": "string"
+        },
+        "model": {
+          "$ref": "#/definitions/ReceivePaymentViewModel"
+        }
+      }
+    },
+    "StorageViewModel": {
+      "type": "object",
+      "properties": {
+        "goodsCode": {
+          "type": "string"
+        },
+        "storageCode": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "itmID": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "date": {
+          "type": "string"
+        },
+        "byNow": {
+          "type": "boolean"
+        },
+        "cashMenuMode": {
+          "type": "boolean"
+        }
+      }
+    },
+    "StorageViewModelOrashWebServiceModel": {
+      "type": "object",
+      "properties": {
+        "uniqueID": {
+          "type": "string"
+        },
+        "model": {
+          "$ref": "#/definitions/StorageViewModel"
+        }
+      }
+    }
+  }
+}
