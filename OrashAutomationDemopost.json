@@ -1,0 +1,1341 @@
+{
+	"info": {
+		"_postman_id": "d514ac5b-e368-4516-bdb6-9480b43e4e55",
+		"name": "Orash MIS Automation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22290852"
+	},
+	"item": [
+		{
+			"name": "Install",
+			"item": [
+				{
+					"name": "Install",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Install",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Install"
+							]
+						},
+						"description": "#### نصب سیستم وب سرویس نرم افزار یکپارچه مالی اوراش\n\nاجرای این درخواست دیتابیس های نرم افزار یکپارچه مالی اوراش را پیدا می کند و ایدیشون را در پاسخ باز می گرداند\n\nبرای اجرا کردن درخواست های دیگر باید ایدی شرکت مدنظر در درخواست ارسال گردد"
+					},
+					"response": [
+						{
+							"name": "Install",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Install",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Install"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 10:01:21 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": \"7651a645-3554-4c88-b678-dbdad8bae14d\",\n            \"name\": \"orash\",\n            \"companyName\": \"شرکت پارت طرح فردوسی\"\n        },\n        {\n            \"id\": \"3fc9218b-6a33-4e41-bcd5-eef5405fbf6e\",\n            \"name\": \"orash1\",\n            \"companyName\": \"گروه نرم افزاري اوراش\"\n        },\n        {\n            \"id\": \"d4f22ad9-1688-4570-bd61-c704784d9ef5\",\n            \"name\": \"Orash6\",\n            \"companyName\": \"عنوان شرکت را اینجا وارد کنید\"\n        },\n        {\n            \"id\": \"8001d47b-27a9-4df7-be6e-ceaddd7ce3d2\",\n            \"name\": \"Orash2\",\n            \"companyName\": \"شرکت به درب رزین فرم\"\n        },\n        {\n            \"id\": \"e14bd989-f4c6-4786-804e-5fed6d99eb75\",\n            \"name\": \"Orash7\",\n            \"companyName\": \"عنوان شرکت را اینجا وارد کنید\"\n        },\n        {\n            \"id\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\n            \"name\": \"orash8\",\n            \"companyName\": \"عنوان شرکت را اینجا وارد کنید\"\n        }\n    ],\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				},
+				{
+					"name": "Install/Renew",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Install/Renew",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Install",
+								"Renew"
+							]
+						},
+						"description": "#### باز نصب سیستم وب سرویس نرم افزار یکپارچه مالی اوراش\n\nاجرای این درخواست ایدی دیتابیس های قبلی و جدیدنرم افزار یکپارچه مالی اوراش در پاسخ باز می گرداند\n\nبرای اجرا کردن درخواست های دیگر باید ایدی شرکت مدنظر در درخواست ارسال گردد"
+					},
+					"response": [
+						{
+							"name": "Install/Renew",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Install/Renew",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Install",
+										"Renew"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 10:01:35 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": \"7651a645-3554-4c88-b678-dbdad8bae14d\",\n            \"name\": \"orash\",\n            \"companyName\": \"شرکت پارت طرح فردوسی\"\n        },\n        {\n            \"id\": \"3fc9218b-6a33-4e41-bcd5-eef5405fbf6e\",\n            \"name\": \"orash1\",\n            \"companyName\": \"گروه نرم افزاري اوراش\"\n        },\n        {\n            \"id\": \"d4f22ad9-1688-4570-bd61-c704784d9ef5\",\n            \"name\": \"Orash6\",\n            \"companyName\": \"عنوان شرکت را اینجا وارد کنید\"\n        },\n        {\n            \"id\": \"8001d47b-27a9-4df7-be6e-ceaddd7ce3d2\",\n            \"name\": \"Orash2\",\n            \"companyName\": \"شرکت به درب رزین فرم\"\n        },\n        {\n            \"id\": \"e14bd989-f4c6-4786-804e-5fed6d99eb75\",\n            \"name\": \"Orash7\",\n            \"companyName\": \"عنوان شرکت را اینجا وارد کنید\"\n        },\n        {\n            \"id\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\n            \"name\": \"orash8\",\n            \"companyName\": \"عنوان شرکت را اینجا وارد کنید\"\n        }\n    ],\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Auth/Create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"user1\",\r\n  \"password\": \"123456\",\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Auth/Create",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Auth",
+								"Create"
+							]
+						},
+						"description": "#### ساخت کاربر جدید\n\nساخت کاربر جدید برای استفاده از وب سرویس با اجرای این درخواست صورت می گیرد\n\n| عنوان | نوع داده | توضیحات |\n| --- | --- | --- |\n| username | string | نام کاربری |\n| password | string | کلمه عبور |\n| uniqueID | string | ایدی دیتابیس نرم افزار یکپارچه مالی اوراش |"
+					},
+					"response": [
+						{
+							"name": "Auth/Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"user1\",\r\n  \"password\": \"123456\",\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Auth/Create",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Auth",
+										"Create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 10:09:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": {\n        \"content\": true,\n        \"errorCode\": 0,\n        \"errorMessage\": \"اطلاعات مورد نظر با موفقيت درج شد\"\n    },\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"مدیر سیستم\",\r\n  \"password\": \"1\",\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Auth",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Auth"
+							]
+						},
+						"description": "#### لاگین و دریافت توکن\n\nبا اجرای این درخواست و درست بودن اطلاعات وارد شده\n\nتوکن و رفرش توکن در پاسخ درخواست باز می گردد که\n\nبرای اجرای درخواست های دیگر توکن باید در هدر در پارامتر\n\nAuthorization\n\nبه صورت زیر ارسال گردد\n\nbearer \"token\"\n\n| عنوان | نوع داده | توضیحات |\n| --- | --- | --- |\n| username | string | نام کاربری |\n| password | string | کلمه عبور |\n| uniqueID | string | ایدی دیتابیس نرم افزار یکپارچه مالی اوراش |"
+					},
+					"response": [
+						{
+							"name": "Auth",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"مدیر سیستم\",\r\n  \"password\": \"1\",\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Auth",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 10:13:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiOWU1OTNjZDItZGFkMS00NTVhLTg4NTgtYTY1ZTZmYmZiNjVmIiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiZjFlZDQzNzgtMDgxYy00NzA4LTg5YjktNjFiYzYzOGUxM2VlIiwiaWF0IjoxNjcxNTMxMjM4LCJuYmYiOjE2NzE1MzEyMzgsImV4cCI6MTY3MTUzMzAzOH0.7snx2KQmXN4SiEugQmGt75jw1A0Gyt_bMweW1zZw_7g\",\n        \"refreshToken\": \"kgOMyEI4Z9sSf/Qw9Ddbgn5FwRnIUYA1AupuTTpQSEg=\",\n        \"name\": \"مدیر سیستم\"\n    },\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Auth?id=6e9964a2-29eb-43c8-a9d3-95beb4394630",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Auth"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6e9964a2-29eb-43c8-a9d3-95beb4394630"
+								}
+							]
+						},
+						"description": "#### گرفتن لیست کاربران نرم افزار اوراش\n\nاین درخواست اطلاعات کاربران نرم افزار یکپارچه مالی اوراش دیتابیس مد نظر را نمایش میدهد"
+					},
+					"response": [
+						{
+							"name": "Auth",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Auth?id=6e9964a2-29eb-43c8-a9d3-95beb4394630",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Auth"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "6e9964a2-29eb-43c8-a9d3-95beb4394630"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 10:11:32 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 5,\n            \"username\": \"مدیر سیستم\",\n            \"fullName\": \"مدیر سیستم\"\n        }\n    ],\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				},
+				{
+					"name": "Auth/Refreshtoken",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiMTc5OGVkZjItNGE3NC00MDRjLThmZDctYjY4ZjZjMGQ4MTA3Iiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiMjlhMmM4MmItNzIwYi00NTY3LThkNDYtM2Q0ZTM0MzY5Nzc1IiwiaWF0IjoxNjcxNTMxNDE2LCJuYmYiOjE2NzE1MzE0MTYsImV4cCI6MTY3MTUzMzIxNn0.RAFpIjWU8hr8LA8gMcZ3iion9w9Gutomd7LC-8gS5HU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiMTc5OGVkZjItNGE3NC00MDRjLThmZDctYjY4ZjZjMGQ4MTA3Iiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiMjlhMmM4MmItNzIwYi00NTY3LThkNDYtM2Q0ZTM0MzY5Nzc1IiwiaWF0IjoxNjcxNTMxNDE2LCJuYmYiOjE2NzE1MzE0MTYsImV4cCI6MTY3MTUzMzIxNn0.RAFpIjWU8hr8LA8gMcZ3iion9w9Gutomd7LC-8gS5HU\",\r\n  \"refreshToken\": \"uIFuaQD3Y1d9EJvJQ6hLwXbfIGzC9Kn818Fi1hxn+1o=\",\r\n  \"name\": \"مدیر سیستم\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Auth/RefreshToken",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Auth",
+								"RefreshToken"
+							]
+						},
+						"description": "#### سرویس رفرش توکن\n\nبا ارسال توکن و رفرش توکن و نام کاربری به این درخواست\n\nتوکن و رفرش توکن جدید دریافت می کنید\n\n| عنوان | نوع داده | توضیحات |\n| --- | --- | --- |\n| token | string | jwt token |\n| refreshToken | string | refresh token |\n| name | string | username |"
+					},
+					"response": [
+						{
+							"name": "Auth/Refreshtoken",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiMTc5OGVkZjItNGE3NC00MDRjLThmZDctYjY4ZjZjMGQ4MTA3Iiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiMjlhMmM4MmItNzIwYi00NTY3LThkNDYtM2Q0ZTM0MzY5Nzc1IiwiaWF0IjoxNjcxNTMxNDE2LCJuYmYiOjE2NzE1MzE0MTYsImV4cCI6MTY3MTUzMzIxNn0.RAFpIjWU8hr8LA8gMcZ3iion9w9Gutomd7LC-8gS5HU\",\r\n  \"refreshToken\": \"uIFuaQD3Y1d9EJvJQ6hLwXbfIGzC9Kn818Fi1hxn+1o=\",\r\n  \"name\": \"مدیر سیستم\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Auth/RefreshToken",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Auth",
+										"RefreshToken"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 10:17:33 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiNWEyZjVjNjAtZmQ4OC00OWJlLWIxNjYtNWE2YTYwNTNiZjQxIiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiMmYwNzNjNWItNmE4Yi00ZDZiLWE4ZWMtY2YwZDlkMTQwNDkwIiwiaWF0IjoxNjcxNTMxNDUzLCJuYmYiOjE2NzE1MzE0NTMsImV4cCI6MTY3MTUzMzI1M30.O_GsUzKtainL0GCNup3jLHrigJHnrdkuMMhEHQJ_DjM\",\n        \"refreshToken\": \"cK5c5ZpXaF3wfPODsgn0ENDnANJrjMb3FV948fa7p84=\",\n        \"name\": null\n    },\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "AccDoc",
+			"item": [
+				{
+					"name": "AccDoc",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiNjAwNzhhMTYtZDQ5YS00M2Q0LTllNDQtNjFlMTQ4ZDdjZTFjIiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiMDBlYzY4NzAtZGE1ZC00NTlhLWFiZWYtZjdmN2NkMWYzYWVmIiwiaWF0IjoxNjcxNTM1MDM3LCJuYmYiOjE2NzE1MzUwMzcsImV4cCI6MTY3MTUzNjgzN30.BowvbW5hTY0jY8fyUMqsXPaaXziIFD4qEwIFGhNw6nA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"createuser\": 5,\r\n    \"createdate\": \"string\",\r\n    \"createtime\": \"string\",\r\n    \"value\": [\r\n      {\r\n        \"hid\": \"string\",\r\n        \"ano\": \"string\",\r\n        \"hdec\": \"string\",\r\n        \"ad\": [\r\n          {\r\n            \"hid\": \"string\",\r\n            \"iid\": \"string\",\r\n            \"row\": \"string\",\r\n            \"kl\": \"string\",\r\n            \"mn\": \"string\",\r\n            \"tc\": \"string\",\r\n            \"ide\": \"string\",\r\n            \"d\": \"string\",\r\n            \"c\": \"string\",\r\n            \"t2\": \"string\"\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/AccDoc",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"AccDoc"
+							]
+						},
+						"description": "#### ثبت سند حسابداری در نرم افزار یکپارچه مالی اوراش\n\n| **عنوان** | **نوع داده** | **توضیحات** |\n| --- | --- | --- |\n| UniqueID | string | ایدی دیتابیس نرم افزار یکپارچه مالی اوراش |\n| Model | list |  |\n| CreateUser | long | کد کاربر |\n| CreateDate | string | زمان ایجاد سند  <br>مثال : \"1400/08/01\" |\n| CreateTime | string | زمان ایجاد سند است  <br>مثال : \"10:31\" |\n| Value | array | اطلاعات سند |\n| hid | string | شناسه سربرگ سند |\n| ano | string | شماره برگه |\n| hdec | string | توضیحات هدر |\n| ad | array | اطلاعات دیتیل سند |\n| hid | string | شناسه سربرگ سند |\n| iid | string | ردیف های دیتیل |\n| row | string | شماره سطر |\n| kl | string | کد کل |\n| mn | string | کد معین |\n| tc | string | کد تفصیلی |\n| ide | string | توضیحات دیتیل |\n| d | string | بدهکار |\n| c | string | بستانکار |\n| t2 | string | تفصیلی 2 |"
+					},
+					"response": [
+						{
+							"name": "AccDoc",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"createuser\": 5,\r\n    \"createdate\": \"string\",\r\n    \"createtime\": \"string\",\r\n    \"value\": [\r\n      {\r\n        \"hid\": \"string\",\r\n        \"ano\": \"string\",\r\n        \"hdec\": \"string\",\r\n        \"ad\": [\r\n          {\r\n            \"hid\": \"string\",\r\n            \"iid\": \"string\",\r\n            \"row\": \"string\",\r\n            \"kl\": \"string\",\r\n            \"mn\": \"string\",\r\n            \"tc\": \"string\",\r\n            \"ide\": \"string\",\r\n            \"d\": \"string\",\r\n            \"c\": \"string\",\r\n            \"t2\": \"string\"\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7237/api/v1/AccDoc",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"AccDoc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 11:19:24 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"content\": \"0\",\n            \"errorCode\": 1,\n            \"errorMessage\": \"تاريخ وارد شده در بازه ي سال مالي تعريف شده نمي باشد .\"\n        }\n    ],\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiNjAwNzhhMTYtZDQ5YS00M2Q0LTllNDQtNjFlMTQ4ZDdjZTFjIiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiMDBlYzY4NzAtZGE1ZC00NTlhLWFiZWYtZjdmN2NkMWYzYWVmIiwiaWF0IjoxNjcxNTM1MDM3LCJuYmYiOjE2NzE1MzUwMzcsImV4cCI6MTY3MTUzNjgzN30.BowvbW5hTY0jY8fyUMqsXPaaXziIFD4qEwIFGhNw6nA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"code\": 3456456,\r\n    \"name\": \"name\",\r\n    \"tel\": \"\",\r\n    \"address\": \"\",\r\n    \"persons\": true,\r\n    \"expence\": false,\r\n    \"bank\": false,\r\n    \"cash\": false,\r\n    \"tuner\": false,\r\n    \"perType\": 0,\r\n    \"mobile\": \"\",\r\n    \"fax\": \"\",\r\n    \"economicCode\": \"\",\r\n    \"nationalCode\": \"\",\r\n    \"registerNo\": \"\",\r\n    \"postCode\": \"\",\r\n    \"nationalNo\": \"\",\r\n    \"description\": \"\",\r\n    \"isActive\": true,\r\n    \"fName\": \"\",\r\n    \"lName\": \"\",\r\n    \"klCodeRef\": \"\",\r\n    \"mnCodeRef\": \"\",\r\n    \"email\": \"\",\r\n    \"goodRequest\": \"\",\r\n    \"address2\": \"\",\r\n    \"tel2\": \"\",\r\n    \"mobile2\": \"\",\r\n    \"email2\": \"\",\r\n    \"klCashCodeRef\": \"\",\r\n    \"mnCashCodeRef\": \"\",\r\n    \"klBankCodeRef\": \"\",\r\n    \"mnBankCodeRef\": \"\",\r\n    \"klPayCodeRef\": \"\",\r\n    \"mnPayCodeRef\": \"\",\r\n    \"craft\": \"\",\r\n    \"stateIdRef\": 0,\r\n    \"cityIdRef\": 0,\r\n    \"visitorCodeRef\": 0,\r\n    \"actualType\": 0,\r\n    \"transactionTaxType\": 0,\r\n    \"rateDefualt\": 0,\r\n    \"branchName\": \"\",\r\n    \"accountType\": \"\",\r\n    \"accountOwner\": \"\",\r\n    \"shebaNo\": \"\",\r\n    \"cardNo\": \"\",\r\n    \"branchTel\": \"\",\r\n    \"branchFax\": \"\",\r\n    \"accountNo\": \"\",\r\n    \"calcTax\": true\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Customer",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Customer"
+							]
+						},
+						"description": "#### ایجاد حساب جدید در نرم افزار یکپارچه مالی اوراش\n\n| عنوان | نوع داده | توضیحات |\n| --- | --- | --- |\n| uniqueID | string | ایدی دیتابیس نرم افزار یکپارچه مالی اوراش |\n| model | list |  |\n| code | long | کد حساب است |\n| name | string | عنوان حساب |\n| tel | string | تلفن |\n| address | string | آدرس |\n| persons | bool | برای اشخاص و سایر حسابها مقدار 1 می گیرد و در غیر این صورت مقدار 0 می گیرد |\n| expence | bool | برای هزینه و سایر درامدها مقدار 1 می گیرد و در غیر این صورت مقدار 0 می گیرد |\n| bank | bool | برای بانک مقدار 1 می گیرد و در غیر این صورت مقدار 0 می گیرد |\n| cash | bool | برای صندوق مقدار 1 می گیرد و در غیر این صورت مقدار 0 می گیرد |\n| tuner | bool | برای اشخاص و سایر حسابها مقدار 1 می گیرد و در غیر این صورت مقدار 0 می گیرد |\n| perType | long | نوع شخص حقیقی(2) و حقوقی (1)و حساب (0)را مشخص می کند |\n| mobile | string | موبایل |\n| fax | string | شماره فکس |\n| economicCode | string | شماره اقتصادی |\n| nationalCode | string | کد ملی |\n| registerNo | string | شماره ثبت |\n| postCode | string | کد پستی |\n| nationalNo | string | شناسه ملی |\n| description | string | توضیحات |\n| isActive | bool | فعال و غیر فعال بودن |\n| fName | string | نام خانوادگی |\n| lName | string | نام |\n| klCodeRef | string | حساب کل پیش فرض |\n| mnCodeRef | string | حساب معین پیش فرض |\n| email | string | ایمیل |\n| goodRequest | string |  |\n| address2 | string | آدرس 2 |\n| tel2 | string | تلفن 2 |\n| mobile2 | string | موبایل 2 |\n| email2 | string | ایمیل2 |\n| klCashCodeRef | string | حساب کل اسناد نزد صندوق |\n| mnCashCodeRef | string | حساب معین اسناد نزد صندوق |\n| klBankCodeRef | string | حساب کل اسناد نزد بانک |\n| mnBankCodeRef | string | حساب معین اسناد نزد بانک |\n| klPayCodeRef | string | حساب کل اسناد پرداختنی |\n| mnPayCodeRef | string | حساب معین اسناد پرداختنی |\n| craft | string | پیشه ، کالا و خدمات درخواستی |\n| stateIdRef | long | کد استان |\n| cityIdRef | long | کد شهر |\n| visitorCodeRef | long | کد ویزیتور پیش فرض است |\n| actualType | long | نوع شخص حقیقی است .  <br>مشمولین ماده 81 و 2 غیر مشمول ثبت نام و 3 مشمول ثبت نام و4مصرف کننده نهایی  <br> |\n| transactionTaxType | long | موضوع معامله در خرید و فروش است و می تواند خالی باشد .  <br>1 دارو - 2 دخانیات - 3 موبایل - 4 لوازم خانگی - 5 قطعات مصرفی - یدکی وسایل نقلیه - 6 فرآورده ها و مشتقات نفتی و گازی و پتروشیمی - 7 طلا اعم از شمش ، مسکوکات و مصنوعات زینتی - 8 منسوجات و دام زنده ، گوشت سفید و قرمز - 11 محصولات اساسی کشاورزی - 12 سایر کالاها و خدمات پوشاک - 9 اسباب بازی - 10 |\n| rateDefualt | long | نرخ فروش پیش فرض است و می تواند مقدار 1 و 2 و 3 بگیرد |\n| branchName | string | نام شعبه بانک |\n| accountType | string | نوع حساب بانکی |\n| accountOwner | string | صاحب حساب |\n| shebaNo | string | شماره شبا |\n| cardNo | string | شماره کارت |\n| branchTel | string | تلفن شعبه |\n| branchFax | string | فکس شعبه |\n| accountNo | string | شماره حساب |\n| calcTax | bool | محاسبه ارزش افزوده است . 1 فعال و 0 غیر فعال |"
+					},
+					"response": [
+						{
+							"name": "Customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"code\": 3456456,\r\n    \"name\": \"name\",\r\n    \"tel\": \"\",\r\n    \"address\": \"\",\r\n    \"persons\": true,\r\n    \"expence\": false,\r\n    \"bank\": false,\r\n    \"cash\": false,\r\n    \"tuner\": false,\r\n    \"perType\": 0,\r\n    \"mobile\": \"\",\r\n    \"fax\": \"\",\r\n    \"economicCode\": \"\",\r\n    \"nationalCode\": \"\",\r\n    \"registerNo\": \"\",\r\n    \"postCode\": \"\",\r\n    \"nationalNo\": \"\",\r\n    \"description\": \"\",\r\n    \"isActive\": true,\r\n    \"fName\": \"\",\r\n    \"lName\": \"\",\r\n    \"klCodeRef\": \"\",\r\n    \"mnCodeRef\": \"\",\r\n    \"email\": \"\",\r\n    \"goodRequest\": \"\",\r\n    \"address2\": \"\",\r\n    \"tel2\": \"\",\r\n    \"mobile2\": \"\",\r\n    \"email2\": \"\",\r\n    \"klCashCodeRef\": \"\",\r\n    \"mnCashCodeRef\": \"\",\r\n    \"klBankCodeRef\": \"\",\r\n    \"mnBankCodeRef\": \"\",\r\n    \"klPayCodeRef\": \"\",\r\n    \"mnPayCodeRef\": \"\",\r\n    \"craft\": \"\",\r\n    \"stateIdRef\": 0,\r\n    \"cityIdRef\": 0,\r\n    \"visitorCodeRef\": 0,\r\n    \"actualType\": 0,\r\n    \"transactionTaxType\": 0,\r\n    \"rateDefualt\": 0,\r\n    \"branchName\": \"\",\r\n    \"accountType\": \"\",\r\n    \"accountOwner\": \"\",\r\n    \"shebaNo\": \"\",\r\n    \"cardNo\": \"\",\r\n    \"branchTel\": \"\",\r\n    \"branchFax\": \"\",\r\n    \"accountNo\": \"\",\r\n    \"calcTax\": true\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Customer",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Customer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 11:51:07 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"content\": \"0\",\n            \"errorCode\": 1,\n            \"errorMessage\": \"کد کل و معين پيش فرض صحيح نيست .\"\n        },\n        {\n            \"content\": \"0\",\n            \"errorCode\": 1,\n            \"errorMessage\": \"کد استان و شهر صحيح نيست .\"\n        },\n        {\n            \"content\": \"0\",\n            \"errorCode\": 1,\n            \"errorMessage\": \"کد ويزيتور صحيح نيست .\"\n        }\n    ],\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				},
+				{
+					"name": "Customer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiODY5NWM3OWUtYWQzOC00M2UzLWFlYmUtMjhkYzVkYzUzY2MwIiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiNWJhYTBlMWEtMDIzMi00Mzk4LWE2NjEtNzE5ZTZlYmM3MTE0IiwiaWF0IjoxNjcxNTM3MjE1LCJuYmYiOjE2NzE1MzcyMTUsImV4cCI6MTY3MTUzOTAxNX0.65AvWb8atbugXApsSzkJhIKSRetdDMrE9jnTboCmDn4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"code\": null,\r\n    \"name\": \"\",\r\n    \"tel\": \"\",\r\n    \"address\": \"\",\r\n    \"persons\": true,\r\n    \"expence\": true,\r\n    \"bank\": true,\r\n    \"cash\": true,\r\n    \"tuner\": true,\r\n    \"perType\": 0,\r\n    \"mobile\": \"\",\r\n    \"fax\": \"\",\r\n    \"economicCode\": \"\",\r\n    \"nationalCode\": \"\",\r\n    \"registerNo\": \"\",\r\n    \"postCode\": \"\",\r\n    \"nationalNo\": \"\",\r\n    \"description\": \"\",\r\n    \"isActive\": true,\r\n    \"fName\": \"\",\r\n    \"lName\": \"\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Customer",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Customer"
+							]
+						},
+						"description": "#### جستوجوی اشخاص و حساب ها در نرم افزار یکپارچه مالی اوراش\n\nEndFragment\n\n| عنوان | نوع داده | توضیحات |\n| --- | --- | --- |\n| uniqueID | string | ایدی دیتابیس نرم افزار یکپارچه مالی اوراش |\n| model | list |  |\n| code | long | کد حساب است |\n| name | string | عنوان حساب |\n| tel | string | تلفن |\n| address | string | آدرس |\n| persons | bool | برای اشخاص و سایر حسابها مقدار 1 می گیرد و در غیر این صورت مقدار 0 می گیرد |\n| expence | bool | برای هزینه و سایر درامدها مقدار 1 می گیرد و در غیر این صورت مقدار 0 می گیرد |\n| bank | bool | برای بانک مقدار 1 می گیرد و در غیر این صورت مقدار 0 می گیرد |\n| cash | bool | برای صندوق مقدار 1 می گیرد و در غیر این صورت مقدار 0 می گیرد |\n| tuner | bool | برای اشخاص و سایر حسابها مقدار 1 می گیرد و در غیر این صورت مقدار 0 می گیرد |\n| perType | long | نوع شخص حقیقی(2) و حقوقی (1)و حساب (0)را مشخص می کند |\n| mobile | string | موبایل |\n| fax | string | شماره فکس |\n| economicCode | string | شماره اقتصادی |\n| nationalCode | string | کد ملی |\n| registerNo | string | شماره ثبت |\n| postCode | string | کد پستی |\n| nationalNo | string | شناسه ملی |\n| description | string | توضیحات |\n| isActive | bool | فعال و غیر فعال بودن |\n| fName | string | نام خانوادگی |\n| lName | string | نام |"
+					},
+					"response": [
+						{
+							"name": "Customer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"code\": null,\r\n    \"name\": \"\",\r\n    \"tel\": \"\",\r\n    \"address\": \"\",\r\n    \"persons\": true,\r\n    \"expence\": true,\r\n    \"bank\": true,\r\n    \"cash\": true,\r\n    \"tuner\": true,\r\n    \"perType\": 0,\r\n    \"mobile\": \"\",\r\n    \"fax\": \"\",\r\n    \"economicCode\": \"\",\r\n    \"nationalCode\": \"\",\r\n    \"registerNo\": \"\",\r\n    \"postCode\": \"\",\r\n    \"nationalNo\": \"\",\r\n    \"description\": \"\",\r\n    \"isActive\": true,\r\n    \"fName\": \"\",\r\n    \"lName\": \"\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Customer",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Customer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 11:53:49 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [],\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Good",
+			"item": [
+				{
+					"name": "Good",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiODY5NWM3OWUtYWQzOC00M2UzLWFlYmUtMjhkYzVkYzUzY2MwIiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiNWJhYTBlMWEtMDIzMi00Mzk4LWE2NjEtNzE5ZTZlYmM3MTE0IiwiaWF0IjoxNjcxNTM3MjE1LCJuYmYiOjE2NzE1MzcyMTUsImV4cCI6MTY3MTUzOTAxNX0.65AvWb8atbugXApsSzkJhIKSRetdDMrE9jnTboCmDn4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"code\": \"1242124\",\r\n    \"name\": \"kala\",\r\n    \"type\": 1,\r\n    \"serial\": \"\",\r\n    \"fiPrice1\": 0,\r\n    \"offPercent1\": 0,\r\n    \"fiPrice2\": 0,\r\n    \"offPercent2\": 0,\r\n    \"fiPrice3\": 0,\r\n    \"offPercent3\": 0,\r\n    \"saleName\": \"\",\r\n    \"taxPercent\": 0,\r\n    \"lengthValue\": 0,\r\n    \"widthValue\": 0,\r\n    \"heightValue\": 0,\r\n    \"isActive\": true,\r\n    \"diameterValue\": 0,\r\n    \"nationalCode\": \"\",\r\n    \"weightPack\": 0,\r\n    \"weightGoods\": 0,\r\n    \"criterionWeight\": 0,\r\n    \"unitIdRef\": 0,\r\n    \"mainGroupCodeRef\": 0,\r\n    \"secondGroupCodeRef\": 0,\r\n    \"isAdded\": true,\r\n    \"isBuyAdded\": true,\r\n    \"unitPackingCodeRef\": 0,\r\n    \"goodCategoryIdRef\": 0,\r\n    \"serialsControl\": true,\r\n    \"patternIdRef\": 0,\r\n    \"dimensionsLengthPack\": 0,\r\n    \"dimensionsWidthPack\": 0,\r\n    \"dimensionsHeightPack\": 0,\r\n    \"dimensionsLengthGoods\": 0,\r\n    \"dimensionsWidthGoods\": 0,\r\n    \"dimensionsHeightGoods\": 0,\r\n    \"criterionDimensions\": 0\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Good",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Good"
+							]
+						},
+						"description": "#### ثبت کالا ی جدید در نرم افزار یکپارچه مالی اوراش\n\n| عنوان | نوع داده | توضیحات |\n| --- | --- | --- |\n| uniqueID | string | ایدی دیتابیس نرم افزار یکپارچه مالی اوراش |\n| Model | list |  |\n| code | string | کد کالا و خدمات است و می تواند null باشد اگر null بود کد پیشنهادی نرم افزار رو میگیرد |\n| name | string | عنوان کالا و خدمات است |\n| type | long | نوع کالا و خدمات است و نمی تواند خالی باشد . برای کالا مقدار1و برای خدمات مقدار2وارد شود |\n| serial | string | سریال کالا و خدمات است |\n| fiPrice1 | long | مبلغ 1 |\n| offPercent1 | long | درصد تخفیف 1 |\n| fiPrice2 | long | مبلغ 2 |\n| offPercent2 | long | درصد تخفیف 2 |\n| fiPrice3 | long | مبلغ 3 |\n| offPercent3 | long | درصد تخفیف3 |\n| saleName | long | عنوان فروش است |\n| taxPercent | long | درصد مالیات است |\n| lengthValue | long | درصد مالیات است |\n| widthValue | long | میزان عرض کالا |\n| heightValue | long | میزان ارتفاع کالا |\n| isActive | bool | 1 برای کالای فعال و 0 برای کالای غیر فعال است و درصورت خالی بودن مقدار 1 می گیرد |\n| diameterValue | long | میزان قطر کالا |\n| nationalCode | string | کد ملی است |\n| weightPack | long | وزن بسته بندی کالا |\n| weightGoods | long | وزن کالا |\n| criterionWeight | long | وزن معیار |\n| unitIdRef | long | کد واحد اندازه گیری کالا |\n| mainGroupCodeRef | long | کد گروه اصلی کالا |\n| secondGroupCodeRef | long | کد گروه فرعی کالا |\n| isAdded | bool | ارزش افزوده فروش است 1 برای فعال و 0 برای غیر فعال بودن خالی باشد مقدار 0 می گیرد |\n| isBuyAdded | bool | ارزش افزوده خرید است 1 برای فعال و 0 برای غیر فعال بودن خالی باشد مقدار 0 می گیرد |\n| unitPackingCodeRef | long | کد واحد بسته بندی |\n| goodCategoryIdRef | long | کد گروه بندی کالا |\n| serialsControl | bool | 1 برای قرار دادن تیک 0 برای برداشتن تیک در صورت خالی بودن مقدار 0 می گیرد . |\n| patternIdRef | long | الگوی تعریف کالا است |\n| dimensionsLengthPack | long | مقدار طول ابعاد بسته بندی |\n| dimensionsWidthPack | long | مقدار عرض ابعاد بسته بندی |\n| dimensionsHeightPack | long | مقدار ارتفاع ابعاد بسته بندی |\n| dimensionsLengthGoods | long | مقدار طول ابعاد کالا |\n| dimensionsWidthGoods | long | مقدار عرض ابعاد کالا |\n| dimensionsHeightGoods | long | مقدار ارتفاع ابعاد کالا |\n| criterionDimensions | long | ابعاد معیار |"
+					},
+					"response": [
+						{
+							"name": "Good",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"code\": \"1242124\",\r\n    \"name\": \"kala\",\r\n    \"type\": 1,\r\n    \"serial\": \"\",\r\n    \"fiPrice1\": 0,\r\n    \"offPercent1\": 0,\r\n    \"fiPrice2\": 0,\r\n    \"offPercent2\": 0,\r\n    \"fiPrice3\": 0,\r\n    \"offPercent3\": 0,\r\n    \"saleName\": \"\",\r\n    \"taxPercent\": 0,\r\n    \"lengthValue\": 0,\r\n    \"widthValue\": 0,\r\n    \"heightValue\": 0,\r\n    \"isActive\": true,\r\n    \"diameterValue\": 0,\r\n    \"nationalCode\": \"\",\r\n    \"weightPack\": 0,\r\n    \"weightGoods\": 0,\r\n    \"criterionWeight\": 0,\r\n    \"unitIdRef\": 0,\r\n    \"mainGroupCodeRef\": 0,\r\n    \"secondGroupCodeRef\": 0,\r\n    \"isAdded\": true,\r\n    \"isBuyAdded\": true,\r\n    \"unitPackingCodeRef\": 0,\r\n    \"goodCategoryIdRef\": 0,\r\n    \"serialsControl\": true,\r\n    \"patternIdRef\": 0,\r\n    \"dimensionsLengthPack\": 0,\r\n    \"dimensionsWidthPack\": 0,\r\n    \"dimensionsHeightPack\": 0,\r\n    \"dimensionsLengthGoods\": 0,\r\n    \"dimensionsWidthGoods\": 0,\r\n    \"dimensionsHeightGoods\": 0,\r\n    \"criterionDimensions\": 0\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Good",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Good"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 11:56:05 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"content\": \"0\",\n            \"errorCode\": 1,\n            \"errorMessage\": \"کد واحد اندازه گيري وارد شده صحيح نيست .\"\n        },\n        {\n            \"content\": \"0\",\n            \"errorCode\": 1,\n            \"errorMessage\": \"کد گروه اصلي صحيح نيست .\"\n        },\n        {\n            \"content\": \"0\",\n            \"errorCode\": 1,\n            \"errorMessage\": \"کد گروه فرعي صحيح نيست .\"\n        },\n        {\n            \"content\": \"0\",\n            \"errorCode\": 1,\n            \"errorMessage\": \"کد بسته بندي صحيح نيست .\"\n        },\n        {\n            \"content\": \"0\",\n            \"errorCode\": 1,\n            \"errorMessage\": \"کد طبقه بندي صحيح نيست .\"\n        }\n    ],\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				},
+				{
+					"name": "Good",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiODY5NWM3OWUtYWQzOC00M2UzLWFlYmUtMjhkYzVkYzUzY2MwIiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiNWJhYTBlMWEtMDIzMi00Mzk4LWE2NjEtNzE5ZTZlYmM3MTE0IiwiaWF0IjoxNjcxNTM3MjE1LCJuYmYiOjE2NzE1MzcyMTUsImV4cCI6MTY3MTUzOTAxNX0.65AvWb8atbugXApsSzkJhIKSRetdDMrE9jnTboCmDn4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"code\": \"\",\r\n    \"name\": \"\",\r\n    \"type\": 1,\r\n    \"serial\": \"\",\r\n    \"fiPrice1\": 0,\r\n    \"offPercent1\": 0,\r\n    \"fiPrice2\": 0,\r\n    \"offPercent2\": 0,\r\n    \"fiPrice3\": 0,\r\n    \"offPercent3\": 0,\r\n    \"saleName\": \"\",\r\n    \"taxPercent\": 0,\r\n    \"lengthValue\": 0,\r\n    \"widthValue\": 0,\r\n    \"heightValue\": 0,\r\n    \"isActive\": true,\r\n    \"diameterValue\": 0,\r\n    \"nationalCode\": \"\",\r\n    \"weightPack\": 0,\r\n    \"weightGoods\": 0,\r\n    \"unitsName\": \"\",\r\n    \"mainGroupName\": \"\",\r\n    \"secondGroupName\": \"\",\r\n    \"unitPackingName\": \"\",\r\n    \"goodCategoryName\": \"\",\r\n    \"goodPatternName\": \"\",\r\n    \"showStockFlg\": true,\r\n    \"storageCode\": 0,\r\n    \"storageName\": \"\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Good",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Good"
+							]
+						},
+						"description": "#### جستوجوی کالا ها در نرم افزار یکپارچه مالی اوراش\n\n| عنوان | نوع داده | توضیحات |\n| --- | --- | --- |\n| uniqueID | string | ایدی دیتابیس نرم افزار یکپارچه مالی اوراش |\n| Model | list |  |\n| code | string | کد کالا و خدمات است و می تواند null باشد اگر null بود کد پیشنهادی نرم افزار رو میگیرد |\n| name | string | عنوان کالا و خدمات است |\n| type | long | نوع کالا و خدمات است و نمی تواند خالی باشد . برای کالا مقدار1و برای خدمات مقدار2وارد شود |\n| serial | string | سریال کالا و خدمات است |\n| fiPrice1 | long | مبلغ 1 |\n| offPercent1 | long | درصد تخفیف 1 |\n| fiPrice2 | long | مبلغ 2 |\n| offPercent2 | long | درصد تخفیف 2 |\n| fiPrice3 | long | مبلغ 3 |\n| offPercent3 | long | درصد تخفیف3 |\n| saleName | string | عنوان فروش است |\n| taxPercent | long | درصد مالیات است |\n| lengthValue | long | درصد مالیات است |\n| widthValue | long | میزان عرض کالا |\n| heightValue | long | میزان ارتفاع کالا |\n| isActive | bool | 1 برای کالای فعال و 0 برای کالای غیر فعال است و درصورت خالی بودن مقدار 1 می گیرد |\n| diameterValue | long | میزان قطر کالا |\n| nationalCode | string | کد ملی است |\n| weightPack | long | وزن بسته بندی کالا |\n| weightGoods | long | وزن کالا |\n| criterionWeight | long | وزن معیار |\n| unitName | string | واحد اندازه گیری کالا |\n| mainGroupName | string | گروه اصلی کالا |\n| secondGroupName | string | گروه فرعی کالا |\n| unitPackingName | string | واحد بسته بندی |\n| goodCategoryName | string | گروه بندی کالا |\n| goodPatternName | string | الگوی تعریف کالا |\n| showStockFlg | bool | نمایش موجودی |\n| storageCode | long | کد انبار |\n| storageName | string | نام انبار |"
+					},
+					"response": [
+						{
+							"name": "Good",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"code\": \"\",\r\n    \"name\": \"\",\r\n    \"type\": 1,\r\n    \"serial\": \"\",\r\n    \"fiPrice1\": 0,\r\n    \"offPercent1\": 0,\r\n    \"fiPrice2\": 0,\r\n    \"offPercent2\": 0,\r\n    \"fiPrice3\": 0,\r\n    \"offPercent3\": 0,\r\n    \"saleName\": \"\",\r\n    \"taxPercent\": 0,\r\n    \"lengthValue\": 0,\r\n    \"widthValue\": 0,\r\n    \"heightValue\": 0,\r\n    \"isActive\": true,\r\n    \"diameterValue\": 0,\r\n    \"nationalCode\": \"\",\r\n    \"weightPack\": 0,\r\n    \"weightGoods\": 0,\r\n    \"unitsName\": \"\",\r\n    \"mainGroupName\": \"\",\r\n    \"secondGroupName\": \"\",\r\n    \"unitPackingName\": \"\",\r\n    \"goodCategoryName\": \"\",\r\n    \"goodPatternName\": \"\",\r\n    \"showStockFlg\": true,\r\n    \"storageCode\": 0,\r\n    \"storageName\": \"\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Good",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Good"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 11:57:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [],\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				},
+				{
+					"name": "Good",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiODY5NWM3OWUtYWQzOC00M2UzLWFlYmUtMjhkYzVkYzUzY2MwIiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiNWJhYTBlMWEtMDIzMi00Mzk4LWE2NjEtNzE5ZTZlYmM3MTE0IiwiaWF0IjoxNjcxNTM3MjE1LCJuYmYiOjE2NzE1MzcyMTUsImV4cCI6MTY3MTUzOTAxNX0.65AvWb8atbugXApsSzkJhIKSRetdDMrE9jnTboCmDn4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"goodCode\": \"124124\",\r\n    \"storageCode\": 0,\r\n    \"fiPrice1\": 0,\r\n    \"offPercent1\": 0,\r\n    \"fiPrice2\": 0,\r\n    \"offPercent2\": 0,\r\n    \"fiPrice3\": 0,\r\n    \"offPercent3\": 0,\r\n    \"userIdRef\": 0\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Good",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Good"
+							]
+						},
+						"description": "#### تغییر نرخ های فروش کالا\n\n| عنوان | نوع داده | توضیحات |\n| --- | --- | --- |\n| uniqueID | string | ایدی دیتابیس نرم افزار یکپارچه مالی اوراش |\n| Model | list |  |\n| goodcode | string | کد کالا و خدمات است |\n| storageCode | long | عنوان انبار |\n| fiPrice1 | long | مبلغ 1 |\n| offPercent1 | long | درصد تخفیف 1 |\n| fiPrice2 | long | مبلغ 2 |\n| offPercent2 | long | درصد تخفیف 2 |\n| fiPrice3 | long | مبلغ 3 |\n| offPercent3 | long | درصد تخفیف3 |\n| userIdRef | long | کد کاربر |"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invice",
+			"item": [
+				{
+					"name": "Invoice",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiODY5NWM3OWUtYWQzOC00M2UzLWFlYmUtMjhkYzVkYzUzY2MwIiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiNWJhYTBlMWEtMDIzMi00Mzk4LWE2NjEtNzE5ZTZlYmM3MTE0IiwiaWF0IjoxNjcxNTM3MjE1LCJuYmYiOjE2NzE1MzcyMTUsImV4cCI6MTY3MTUzOTAxNX0.65AvWb8atbugXApsSzkJhIKSRetdDMrE9jnTboCmDn4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"createuser\": 5,\r\n    \"createdate\": \"1401/10/10\",\r\n    \"createtime\": \"10:10\",\r\n    \"visitorId\": 0,\r\n    \"visitorPrice\": 0,\r\n    \"value\": [\r\n      {\r\n        \"hid\": \"1\",\r\n        \"pc\": \"string\",\r\n        \"hde\": \"string\",\r\n        \"ft\": \"string\",\r\n        \"mbl\": \"string\",\r\n        \"cn\": \"string\",\r\n        \"sf\": \"string\",\r\n        \"t2\": \"string\",\r\n        \"sp\": \"string\",\r\n        \"dsc\": \"string\",\r\n        \"stp\": \"string\",\r\n        \"cc\": \"string\",\r\n        \"boc\": \"string\",\r\n        \"cr\": \"string\",\r\n        \"ua\": \"string\",\r\n        \"hsc\": \"string\",\r\n        \"fd\": [\r\n          {\r\n            \"hid\": \"string\",\r\n            \"iid\": \"string\",\r\n            \"gs\": \"string\",\r\n            \"gc\": \"string\",\r\n            \"fp\": \"string\",\r\n            \"ide\": \"string\",\r\n            \"upcr\": \"string\",\r\n            \"upc\": \"string\",\r\n            \"ofr\": \"string\",\r\n            \"op\": \"string\",\r\n            \"tax\": \"string\",\r\n            \"pc\": \"string\",\r\n            \"tas\": \"string\",\r\n            \"per\": \"string\",\r\n            \"upC1\": \"string\",\r\n            \"upC2\": \"string\",\r\n            \"lv\": \"string\",\r\n            \"wv\": \"string\",\r\n            \"hv\": \"string\",\r\n            \"cv\": \"string\",\r\n            \"dv\": \"string\",\r\n            \"cfp\": \"string\",\r\n            \"ctp\": \"string\",\r\n            \"cro\": \"string\",\r\n            \"crt\": \"string\",\r\n            \"itms\": \"string\"\r\n          }\r\n        ],\r\n        \"fb\": [\r\n          {\r\n            \"hid\": \"string\",\r\n            \"bid\": \"string\",\r\n            \"dc\": \"string\",\r\n            \"wfec\": \"string\",\r\n            \"wflc\": \"string\",\r\n            \"fn\": \"string\",\r\n            \"wbb\": \"string\",\r\n            \"dg\": \"string\",\r\n            \"tfg\": \"string\",\r\n            \"pos\": \"string\",\r\n            \"pod\": \"string\",\r\n            \"dbl\": \"string\",\r\n            \"dp\": \"string\"\r\n          }\r\n        ],\r\n        \"fp\": [\r\n          {\r\n            \"hid\": \"string\",\r\n            \"paid\": \"string\",\r\n            \"pid\": \"string\",\r\n            \"pno\": \"string\",\r\n            \"pr\": \"string\",\r\n            \"sn\": \"string\",\r\n            \"typ\": \"string\",\r\n            \"td\": \"string\",\r\n            \"ic\": \"string\",\r\n            \"tF2C\": \"string\",\r\n            \"tF2L\": \"string\",\r\n            \"ciD1\": \"string\",\r\n            \"ciD2\": \"string\",\r\n            \"cR1\": \"string\",\r\n            \"cR2\": \"string\",\r\n            \"cV1\": \"string\",\r\n            \"cV2\": \"string\",\r\n            \"cst\": \"string\"\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Invoice",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Invoice"
+							]
+						},
+						"description": "#### ثبت فاکتور در نرم افزار یکپارچه مالی اوراش\n\n| عنوان | نوع داده | توضیحات |\n| --- | --- | --- |\n| uniqueID | string | ایدی دیتابیس نرم افزار یکپارچه مالی اوراش |\n| Model | list |  |\n| createuser | long | کد کاربر |\n| createdate | string | زمان ایجاد سند  <br>مثال : \"1400/08/01\" |\n| createtime | string | زمان ایجاد سند است  <br>مثال : \"10:31\" |\n| visitorId | long | کد ویزیتور |\n| visitorPrice | long | قیمت ویزتور |\n| value | array |  |\n| hid | string | فیلدی غیر تکراری جهت ارتباط هدر با دیتیل است که بعدا در رکوردهای دیتیل تکرار می شود و نباید خالی باشد |\n| pc | string | کد شخص |\n| hde | string | توضیحات هدر |\n| ft | string | نوع فاکتور و ورودش الزامی است. در جدول صفحه آخر مقادیری که می توان برای این گزینه وارد کرد ذکر شده است |\n| mbl | string | موبایل |\n| cn | string | نام مشتری |\n| sf | string | شماره فاکتور فروشنده |\n| t2 | string | کد تفصیلی 2 می تواند خالی باشد ولی در صورت مقدار دهی باید حتما از قبل ثبت شده باشد وگرنه با خطا مواجه می شوید |\n| sp | string | ShippingPrice |\n| dsc | string | کد انبار مقصد می تواند خالی باشد ولی درصورت مقدار دهی باید حتما کد انباری باشد که قبلا ثبت شده است |\n| stp | string | ShippingTaxPrice |\n| cc | string |  |\n| boc | string | BaseOfCalculate |\n| cr | string | CurrencyRate |\n| ua | string | UserAmount |\n| hsc | string | کد انبار |\n| fd | array |  |\n| hid | string | فیلدی غیر تکراری جهت ارتباط هدر با دیتیل است که بعدا در رکوردهای دیتیل تکرار می شود و نباید خالی باشد |\n| iid | string | شماره سطر |\n| gs | string | کد کالا |\n| gc | string | تعداد کالا |\n| fp | string | قیمت ورودش |\n| ide | string | توضیحات دیتیل |\n| upcr | string | کد دسته بندی |\n| upc | string | تعداد دسته بندی |\n| ofr | string | تخفیف ردیف |\n| op | string | درصد تخفیف |\n| tax | string | مالیات |\n| pc | string | PriceCalc |\n| tas | string | TaxAssignment |\n| per | string | Performance |\n| upC1 | string | UnitPackingCount1 |\n| upC2 | string | UnitPackingCount2 |\n| lv | string | طول |\n| wv | string | عرض |\n| hv | string | ارتفاع |\n| cv | string | CountValue |\n| dv | string | قطر |\n| cfp | string | Cr_FiPrice |\n| ctp | string | Cr_TotalPrice |\n| cro | string | Cr_OffRow |\n| crt | string | Cr_Tax |\n| itms | string | ITMStorageCode |\n| fb | array | FreightNumber |\n| hid | string | فیلدی غیر تکراری جهت ارتباط هدر با دیتیل است که بعدا در رکوردهای دیتیل تکرار می شود و اگر خالی باشد فاکتور فاقد بارنامه است. |\n| bid | string | ID |\n| dc | string | DriverCodeRef |\n| wfec | string | WeightFreeCar |\n| wflc | string | WeightFullyCar |\n| fn | string | FreightNumber |\n| wbb | string | WeightBridgeBillNumber |\n| dg | string | DeliveryGood |\n| tfg | string | TransfereeGood |\n| pos | string | PlaceOfShipment |\n| pod | string | PlaceOfDelivery |\n| dbl | string | DescriptionBillOfLading |\n| dp | string | DriverPrice |\n| fp | array |  |\n| hid | string | FactorHdrIDRef |\n| paid | string | ID |\n| pid | string | PersonCodeRef |\n| pno | string | PosNo |\n| pr | string | Price |\n| sn | string | SerialNo |\n| typ | string | Type |\n| td | string | TransactionDate |\n| ic | string | InsteadCodeRef |\n| tF2C | string | Tf2CodeRef |\n| tF2L | string | Tf2Level |\n| ciD1 | string | CR_CurrencyIdref_1 |\n| ciD2 | string | CR_CurrencyIdref_2 |\n| cR1 | string | CR_Rate_1 |\n| cR2 | string | CR_Rate_2 |\n| cV1 | string | CR_Value_1 |\n| cV2 | string | CR_Value_2 |\n| cst | string | CR_SelectType |\n\n| Factor | نوع فاکتور |\n| --- | --- |\n| 0 | فاکتور فروش |\n| 1 | پیش فاکتور |\n| 2 | فاکتور خرید |\n| 3 | برگشت از فروش |\n| 4 | برگشت از خرید |\n| 5 | موجودی اول دوره |\n| 7 | حواله انبار |\n| 8 | برگشت از حواله انبار |\n| 11 | رسید انبار |\n| 12 | برگشت از رسید انبار |\n| 13 | اصلاحیه موجودی |\n| 14 | سفارش کالا |\n| 20 | انتقال بین انبار |\n|  |  |"
+					},
+					"response": [
+						{
+							"name": "Invoice",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"createuser\": 5,\r\n    \"createdate\": \"1401/10/10\",\r\n    \"createtime\": \"10:10\",\r\n    \"visitorId\": 0,\r\n    \"visitorPrice\": 0,\r\n    \"value\": [\r\n      {\r\n        \"hid\": \"1\",\r\n        \"pc\": \"string\",\r\n        \"hde\": \"string\",\r\n        \"ft\": \"string\",\r\n        \"mbl\": \"string\",\r\n        \"cn\": \"string\",\r\n        \"sf\": \"string\",\r\n        \"t2\": \"string\",\r\n        \"sp\": \"string\",\r\n        \"dsc\": \"string\",\r\n        \"stp\": \"string\",\r\n        \"cc\": \"string\",\r\n        \"boc\": \"string\",\r\n        \"cr\": \"string\",\r\n        \"ua\": \"string\",\r\n        \"hsc\": \"string\",\r\n        \"fd\": [\r\n          {\r\n            \"hid\": \"string\",\r\n            \"iid\": \"string\",\r\n            \"gs\": \"string\",\r\n            \"gc\": \"string\",\r\n            \"fp\": \"string\",\r\n            \"ide\": \"string\",\r\n            \"upcr\": \"string\",\r\n            \"upc\": \"string\",\r\n            \"ofr\": \"string\",\r\n            \"op\": \"string\",\r\n            \"tax\": \"string\",\r\n            \"pc\": \"string\",\r\n            \"tas\": \"string\",\r\n            \"per\": \"string\",\r\n            \"upC1\": \"string\",\r\n            \"upC2\": \"string\",\r\n            \"lv\": \"string\",\r\n            \"wv\": \"string\",\r\n            \"hv\": \"string\",\r\n            \"cv\": \"string\",\r\n            \"dv\": \"string\",\r\n            \"cfp\": \"string\",\r\n            \"ctp\": \"string\",\r\n            \"cro\": \"string\",\r\n            \"crt\": \"string\",\r\n            \"itms\": \"string\"\r\n          }\r\n        ],\r\n        \"fb\": [\r\n          {\r\n            \"hid\": \"string\",\r\n            \"bid\": \"string\",\r\n            \"dc\": \"string\",\r\n            \"wfec\": \"string\",\r\n            \"wflc\": \"string\",\r\n            \"fn\": \"string\",\r\n            \"wbb\": \"string\",\r\n            \"dg\": \"string\",\r\n            \"tfg\": \"string\",\r\n            \"pos\": \"string\",\r\n            \"pod\": \"string\",\r\n            \"dbl\": \"string\",\r\n            \"dp\": \"string\"\r\n          }\r\n        ],\r\n        \"fp\": [\r\n          {\r\n            \"hid\": \"string\",\r\n            \"paid\": \"string\",\r\n            \"pid\": \"string\",\r\n            \"pno\": \"string\",\r\n            \"pr\": \"string\",\r\n            \"sn\": \"string\",\r\n            \"typ\": \"string\",\r\n            \"td\": \"string\",\r\n            \"ic\": \"string\",\r\n            \"tF2C\": \"string\",\r\n            \"tF2L\": \"string\",\r\n            \"ciD1\": \"string\",\r\n            \"ciD2\": \"string\",\r\n            \"cR1\": \"string\",\r\n            \"cR2\": \"string\",\r\n            \"cV1\": \"string\",\r\n            \"cV2\": \"string\",\r\n            \"cst\": \"string\"\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Invoice",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Invoice"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 12:05:32 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"content\": \"0\",\n            \"errorCode\": 1,\n            \"errorMessage\": \"ويزيتور 0 تعريف نشده است  \"\n        }\n    ],\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "RecPay",
+			"item": [
+				{
+					"name": "RecPay",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiODY5NWM3OWUtYWQzOC00M2UzLWFlYmUtMjhkYzVkYzUzY2MwIiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiNWJhYTBlMWEtMDIzMi00Mzk4LWE2NjEtNzE5ZTZlYmM3MTE0IiwiaWF0IjoxNjcxNTM3MjE1LCJuYmYiOjE2NzE1MzcyMTUsImV4cCI6MTY3MTUzOTAxNX0.65AvWb8atbugXApsSzkJhIKSRetdDMrE9jnTboCmDn4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"createuser\": 5,\r\n    \"createdate\": \"1401/10/10\",\r\n    \"createtime\": \"10:10\",\r\n    \"value\": [\r\n      {\r\n        \"hid\": \"1\",\r\n        \"pc\": \"4\",\r\n        \"rpt\": \"1\",\r\n        \"rpc\": \"2\",\r\n        \"t2\": \"3\",\r\n        \"et\": \"2\",\r\n        \"rd\": [\r\n          {\r\n            \"hid\": \"1\",\r\n            \"iid\": \"1\",\r\n            \"prc\": \"4\",\r\n            \"idisc\": \"84\",\r\n            \"p\": \"456\",\r\n            \"tax\": \"1231\",\r\n            \"t2\": \"456\",\r\n            \"prC1\": \"1\",\r\n            \"t21\": \"456\"\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/RecPay",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"RecPay"
+							]
+						},
+						"description": "#### ثبت دریافت و پرداخت در نرم افزار یکپارچه مالی اوراش\n\n| عنوان | نوع داده | توضیحات |\n| --- | --- | --- |\n| uniqueID | string | ایدی دیتابیس نرم افزار یکپارچه مالی اوراش |\n| Model | list |  |\n| createuser | long | کد کاربر |\n| createdate | string | زمان ایجاد سند  <br>مثال : \"1400/08/01 |\n| createtime | string | زمان ایجاد سند است  <br>مثال : \"10:31 |\n| value | array |  |\n| hid | string | غیر تکراری جهت ارتباط هدر با دیتیل است که بعدا در رکوردهای دیتیل تکرار می شود و نباید خالی باشد |\n| pc | string | کد شخص |\n| rpt | string | نوع دریافت و پرداخت . ورودش الزامی است . نوع long ( 1 – دریافت صندوق 2 –پرداخت صندوق 3 – برداشت نقدی از بانک 4 –واریز نقدی به بانک 5 - شناسایی هزینه 6- تنخواه گردان) |\n| rpc | string | کد دریافت و پرداخت . ورودش الزامی است |\n| t2 | string | تفصیلی 2 می تواند |\n| et | string | مخصوص شناسایی هزینه |\n| rd | array |  |\n| hid | string | فیلدی غیر تکراری جهت ارتباط هدر با دیتیل است که بعدا در رکوردهای دیتیل تکرار می شود و نباید خالی باشد |\n| iid | string | شماره سطر ورودش الزامی است |\n| prc | long | کد دریافت کننده / پرداخت کننده است ورودش الزامی است |\n| idisc | string | توضیحات دیتیل |\n| p | string | قیمت |\n| tax | string | مالیات |\n| t2 | string | تفصیلی 2 |\n| prC1 | string | کد طرف حساب |\n| t21 | string | تفصیلی 2 طرف حساب |"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Storage",
+			"item": [
+				{
+					"name": "Storage",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ItmF2K_bjNixINiz24zYs9iq2YUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9jb3VudHJ5IjoiSVIiLCJyb2xlIjoiU2VydmljZUFkbWluIiwibmFtZWlkIjoiODY5NWM3OWUtYWQzOC00M2UzLWFlYmUtMjhkYzVkYzUzY2MwIiwic3ViIjoiVXNlckF1dGhlbnRpY2F0aW9uIiwianRpIjoiNWJhYTBlMWEtMDIzMi00Mzk4LWE2NjEtNzE5ZTZlYmM3MTE0IiwiaWF0IjoxNjcxNTM3MjE1LCJuYmYiOjE2NzE1MzcyMTUsImV4cCI6MTY3MTUzOTAxNX0.65AvWb8atbugXApsSzkJhIKSRetdDMrE9jnTboCmDn4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"goodsCode\": \"1\",\r\n    \"storageCode\": 0\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7237/api/v1/Storage",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7237",
+							"path": [
+								"api",
+								"v1",
+								"Storage"
+							]
+						},
+						"description": "#### نمایش موجودی کالا در انبار مد نظر\n\n| عنوان | نوع داده | توضیحات |\n| --- | --- | --- |\n| uniqueID | string | ایدی دیتابیس نرم افزار یکپارچه مالی اوراش |\n| Model | list |  |\n| goodsCode | long | کد کالا |\n| storageCode | string | کد انبار |"
+					},
+					"response": [
+						{
+							"name": "Storage",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"uniqueID\": \"6e9964a2-29eb-43c8-a9d3-95beb4394630\",\r\n  \"model\": {\r\n    \"goodsCode\": \"1\",\r\n    \"storageCode\": 0\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7237/api/v1/Storage",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7237",
+									"path": [
+										"api",
+										"v1",
+										"Storage"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8; ver=1"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 20 Dec 2022 12:09:31 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"realCount\": 0,\n            \"usableCount\": 0\n        }\n    ],\n    \"message\": \"Done\",\n    \"hasError\": false,\n    \"responseCode\": 100\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
