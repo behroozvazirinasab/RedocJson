@@ -1,18 +1,62 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "OrashMIS Automation API Demo",
+    "title": "OrashAutomation API Demo",
     "description": " وب سرویس در این صفحه جهت نمایش و دمو می باشد",
     "version": "v1"
   },
   "paths": {
-    "/api/v{version}/AccDoc": {
+    "/api/v{version}/Install": {
       "post": {
         "tags": [
-          "AccDoc"
+          "Install / نصب و راه اندازی"
         ],
-        "summary": "dasdasdasdasdasd",
-        "description": "Sample request:\r\n            \r\n    POST /Todo\r\n    {\r\n       \"id\": 1,\r\n       \"name\": \"Item #1\",\r\n       \"isComplete\": true\r\n    }\r\nSample response:\r\n            \r\n    POST /Todo\r\n    {\r\n       \"id\": 1,\r\n       \"name\": \"Item #1\",\r\n       \"isComplete\": true\r\n    }",
+        "summary": "نصب سیستم وب سرویس نرم افزار یکپارچه مالی اوراش",
+        "description": "اجرای این درخواست دیتابیس های نرم افزار یکپارچه مالی اوراش را پیدا می کند و ایدیشون را در پاسخ باز می گرداند\r\nبرای اجرا کردن درخواست های دیگر باید ایدی شرکت مدنظر در درخواست ارسال گردد",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Install/Renew": {
+      "get": {
+        "tags": [
+          "Install / نصب و راه اندازی"
+        ],
+        "summary": "باز نصب سیستم وب سرویس نرم افزار یکپارچه مالی اوراش",
+        "description": "اجرای این درخواست ایدی دیتابیس های قبلی و جدیدنرم افزار یکپارچه مالی اوراش در پاسخ باز می گرداند\r\nبرای اجرا کردن درخواست های دیگر باید ایدی شرکت مدنظر در درخواست ارسال گردد",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Auth/Create": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "ساخت کاربر جدید",
+        "description": "ساخت کاربر جدید برای استفاده از وب سرویس با اجرای این درخواست صورت می گیرد",
         "consumes": [
           "application/json",
           "text/json",
@@ -30,38 +74,6 @@
             "name": "body",
             "description": "",
             "schema": {
-              "$ref": "#/definitions/AccDocViewModelOrashWebServiceModel"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/v{version}/Auth/Create": {
-      "post": {
-        "tags": [
-          "Auth"
-        ],
-        "consumes": [
-          "application/json",
-          "text/json",
-          "application/*+json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "version",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "schema": {
               "$ref": "#/definitions/AuthModel"
             }
           }
@@ -78,6 +90,8 @@
         "tags": [
           "Auth"
         ],
+        "summary": "لاگین و دریافت توکن",
+        "description": "ا اجرای این درخواست و درست بودن اطلاعات وارد شده\r\nتوکن و رفرش توکن در پاسخ درخواست باز می گردد که\r\nبرای اجرای درخواست های دیگر توکن باید در هدر در پارامتر\r\nAuthorization\r\nبه صورت زیر ارسال گردد\r\nbearer \"token\"",
         "consumes": [
           "application/json",
           "text/json",
@@ -93,6 +107,7 @@
           {
             "in": "body",
             "name": "body",
+            "description": "",
             "schema": {
               "$ref": "#/definitions/AuthModel"
             }
@@ -108,10 +123,13 @@
         "tags": [
           "Auth"
         ],
+        "summary": "گرفتن لیست کاربران نرم افزار اوراش",
+        "description": "این درخواست اطلاعات کاربران نرم افزار یکپارچه مالی اوراش دیتابیس مد نظر را نمایش میدهد",
         "parameters": [
           {
             "in": "query",
             "name": "id",
+            "description": "",
             "type": "string"
           },
           {
@@ -133,6 +151,8 @@
         "tags": [
           "Auth"
         ],
+        "summary": "سرویس رفرش توکن",
+        "description": "با ارسال توکن و رفرش توکن و نام کاربری به این درخواست\r\nتوکن و رفرش توکن جدید دریافت می کنید",
         "consumes": [
           "application/json",
           "text/json",
@@ -148,6 +168,7 @@
           {
             "in": "body",
             "name": "body",
+            "description": "",
             "schema": {
               "$ref": "#/definitions/AuthenticatedViewModel"
             }
@@ -163,8 +184,9 @@
     "/api/v{version}/Customer": {
       "post": {
         "tags": [
-          "Customer"
+          "Customer / اشخاص و حساب ها"
         ],
+        "summary": "ایجاد حساب جدید در نرم افزار یکپارچه مالی اوراش",
         "consumes": [
           "application/json",
           "text/json",
@@ -180,6 +202,7 @@
           {
             "in": "body",
             "name": "body",
+            "description": "",
             "schema": {
               "$ref": "#/definitions/CustomerViewModelOrashWebServiceModel"
             }
@@ -193,8 +216,9 @@
       },
       "get": {
         "tags": [
-          "Customer"
+          "Customer / اشخاص و حساب ها"
         ],
+        "summary": "جستوجوی اشخاص و حساب ها در نرم افزار یکپارچه مالی اوراش",
         "parameters": [
           {
             "in": "path",
@@ -213,8 +237,9 @@
     "/api/v{version}/Good": {
       "post": {
         "tags": [
-          "Good"
+          "Good / کالا"
         ],
+        "summary": "ثبت کالا ی جدید در نرم افزار یکپارچه مالی اوراش",
         "consumes": [
           "application/json",
           "text/json",
@@ -230,6 +255,7 @@
           {
             "in": "body",
             "name": "body",
+            "description": "",
             "schema": {
               "$ref": "#/definitions/GoodsViewModelOrashWebServiceModel"
             }
@@ -243,8 +269,9 @@
       },
       "get": {
         "tags": [
-          "Good"
+          "Good / کالا"
         ],
+        "summary": "جستوجوی کالا ها در نرم افزار یکپارچه مالی اوراش",
         "parameters": [
           {
             "in": "path",
@@ -261,8 +288,44 @@
       },
       "put": {
         "tags": [
-          "Good"
+          "Good / کالا"
         ],
+        "summary": "تغییر نرخ های فروش کالا",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GoodsRateViewModelOrashWebServiceModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/AccDoc": {
+      "post": {
+        "tags": [
+          "AccDoc / سند حسابداری"
+        ],
+        "summary": "ثبت سند حسابداری در نرم افزار یکپارچه مالی اوراش",
+        "description": "",
         "consumes": [
           "application/json",
           "text/json",
@@ -279,48 +342,8 @@
             "in": "body",
             "name": "body",
             "schema": {
-              "$ref": "#/definitions/GoodsRateViewModelOrashWebServiceModel"
+              "$ref": "#/definitions/AccDocViewModelOrashWebServiceModel"
             }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/v{version}/Install": {
-      "post": {
-        "tags": [
-          "Install"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "version",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/v{version}/Install/Renew": {
-      "get": {
-        "tags": [
-          "Install"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "version",
-            "required": true,
-            "type": "string"
           }
         ],
         "responses": {
@@ -333,8 +356,9 @@
     "/api/v{version}/Invoice": {
       "post": {
         "tags": [
-          "Invoice"
+          "Invoice / فاکتور"
         ],
+        "summary": "ثبت فاکتور در نرم افزار یکپارچه مالی اوراش",
         "consumes": [
           "application/json",
           "text/json",
@@ -350,6 +374,7 @@
           {
             "in": "body",
             "name": "body",
+            "description": "",
             "schema": {
               "$ref": "#/definitions/InvoiceViewModelOrashWebServiceModel"
             }
@@ -365,8 +390,9 @@
     "/api/v{version}/RecPay": {
       "post": {
         "tags": [
-          "RecPay"
+          "RecPay / دریافت و پرداخت"
         ],
+        "summary": "ثبت دریافت و پرداخت در نرم افزار یکپارچه مالی اوراش",
         "consumes": [
           "application/json",
           "text/json",
@@ -382,6 +408,7 @@
           {
             "in": "body",
             "name": "body",
+            "description": "",
             "schema": {
               "$ref": "#/definitions/ReceivePaymentViewModelOrashWebServiceModel"
             }
@@ -397,8 +424,9 @@
     "/api/v{version}/Storage": {
       "post": {
         "tags": [
-          "Storage"
+          "Storage / انبار"
         ],
+        "summary": "نمایش موجودی کالا در انبار مد نظر",
         "consumes": [
           "application/json",
           "text/json",
@@ -414,6 +442,7 @@
           {
             "in": "body",
             "name": "body",
+            "description": "",
             "schema": {
               "$ref": "#/definitions/StorageViewModelOrashWebServiceModel"
             }
